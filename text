@@ -1,0 +1,7 @@
+rails g model
+rails g model EventVenue Name:string Address:string Capacity:integer
+rails g model EventInfo EventId:integer Venue:references Description:string StartDate:timestamp
+rails g model TicketInfo TicketId:integer Event:References Order:references Price:integer Category:references
+rails g model TicketOrder OrderId:integer User:references AmountPaid:integer Date:timestamp
+rails g model User UserId:integer Name:string LastName:string Email:string Phone:integer Address:string
+rails g model Category Name:string capacity:integer
