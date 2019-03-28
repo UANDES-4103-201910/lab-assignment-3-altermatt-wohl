@@ -1,2 +1,0 @@
-class EventInfo < ApplicationRecord
-end
