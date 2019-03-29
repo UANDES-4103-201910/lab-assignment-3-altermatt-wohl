@@ -1,7 +1,7 @@
 rails g model
-rails g model EventVenue Name:string Address:string Capacity:integer
-rails g model EventInfo EventId:integer Venue:references Description:string StartDate:timestamp
-rails g model TicketInfo TicketId:integer Event:References Order:references Price:integer Category:references
-rails g model TicketOrder OrderId:integer User:references AmountPaid:integer Date:timestamp
-rails g model User UserId:integer Name:string LastName:string Email:string Phone:integer Address:string
-rails g model Category Name:string capacity:integer
+rails g model EventVenue name:string address:string capacity:integer
+rails g model EventInfo  event_venue_id:integer name:string description:text startDate:timestamp
+rails g model TicketInfo ticket_type_id:integer ticket_order_id:integer price:integer category:string
+rails g model TicketOrder user_id:integer amountpaid:integer date:timestamp
+rails g model User name:string lastname:string email:string phone:integer password:string Address:string
+rails g model TicketType ticket_info_id:integer event_info_id:integer
